@@ -1,0 +1,28 @@
+.container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 150px;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        padding: 0 150px;
+}
+
+@media (max-width: 1200px) {
+        .container {
+          padding: 15px 80px;
+          margin-top: 110px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px 40px;
+        }
+      }
+      
+      @media (max-width: 555px) {
+        .container {
+          justify-content: center;
+          padding: 15px 10px;
+        }
+      }

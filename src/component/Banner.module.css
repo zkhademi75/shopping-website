@@ -1,0 +1,47 @@
+.container img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.textContainer {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.container h1 {
+    font-size: 7rem;
+    color: #696969;
+}
+
+.container p {
+    color: #696969;
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+.container span {
+    color :#30c0e4;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .header {
+      padding: 15px 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 40px;
+    }
+  }
+  
+  @media (max-width: 555px) {
+    .header {
+      padding: 15px 20px;
+    }
+  }
