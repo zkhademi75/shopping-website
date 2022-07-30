@@ -1,18 +1,18 @@
 .cardImage {
     width: 240px;
     height: 200px;
-    
 }
 
 .container {
     margin: 40px 15px;
     width: 240px;
-    background-color: #f6f5f5;
+    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.2s ease;
     border: 1px solid silver;
     overflow: hidden;
+    padding: 10px;
 }
 
 .container:hover {

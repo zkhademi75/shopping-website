@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f9f9f9;
-    min-width: 100vh;
+    min-height: 100vh;
     
 }
 
@@ -44,37 +44,69 @@
     font-size: 0.7rem;
     background-color: rgba(255, 0, 0, 0.175);
     color: red;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-top: 5px;
     height: 10px;
     width: fit-content;
     line-height: 10px;
-    padding: 2px 3px;
+    padding: 4px 5px;
 }
 
 .formInput {
-    border: 1px solid silver;
+    display: block;
+    width: 350px;   
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 5px;
-    width: 300px;
-    height: 20px;
-    padding: 0px 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.uncopleted {
+.uncompleted {
     border: 1px solid red;
     border-radius: 5px;
-    width: 300px;
-    height: 20px;
-    padding: 0px 10px;
+    display: block;
+    width: 350px;   
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .uncopleted:focus,
 .formInput:focus {
-    line-height: 30px;
-    height: 30px;
+    line-height: 20px;
+    height: 20px;
     border: 1px solid #1a73e8;
     outline: none;
 }
+
+.formField:nth-child(6) label {
+    color: #1a73e8;
+  }
+
+.checkBoxContainer {
+    display: flex;
+    font-size: 0.85rem;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px !important;
+    text-align: center;
+  }
 
 .formButton {
     display: flex;
@@ -98,3 +130,43 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+input[type="checkbox"]{
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked {
+    width: 18px;
+    height: 18px;
+    background-color: #1a73e8;
+    border-radius: 50px;
+}
+
+input[type="checkbox"]:focus {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #1a73e8;
+}
+
+@media (max-width: 440px) {
+    .formContainer {
+      padding: 20px;
+      margin: 50px 20px;
+    }
+  
+    .formContainer {
+      width: 90%;
+    }
+  
+    .formInput {
+      width: 90%;
+    }
+  
+    .uncompleted {
+      width: 90%;
+    }
+  }
