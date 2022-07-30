@@ -15,13 +15,14 @@ import CartContextProvider from './context/CartContextProvider';
 import Store from './component/Store';
 
 
+
 class App extends Component {
     render() {
         return (
             
                 <ProductsContextProvider>
                     <CartContextProvider>
-                    <Navbar/> 
+                    <Navbar/>
                     <Routes>
                     <Route path="/signup" element={<SingUp/>} />
                     <Route path="/products" element={<Store/>} />

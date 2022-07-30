@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Banner from './Banner';
+import Owl from './Owl';
 import Search from './Search';
 import Logos from './Logos';
 import StoreLanding from './StoreLanding';
@@ -10,7 +10,7 @@ class Landing extends Component {
     render() {
         return (
             <div >
-                 <Banner/>
+                 <Owl/>
                  <StoreLanding/>
                 <Search/>
                 <Logos/>
